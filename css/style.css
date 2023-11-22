@@ -122,8 +122,6 @@ a {
 }
 
 
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -164,4 +162,41 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+
+
+
+
+/****** Modification de la taille du logo ***********/
+
+
+
+#logo {
+    padding: 30px 50px;
+    width: 61px;
+    height: 19px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+a {
+    margin-left: 30px;
+    
+  }
+
+
+a:hover {
+    color: #0065FC ;
+    text-decoration: overline;
 }
