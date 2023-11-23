@@ -211,6 +211,7 @@ nav {
 .search-bar {
     display: flex;
     padding: 35px 0px;
+    font-weight: bold;
 }
 
 .fa-location-dot {
@@ -225,7 +226,6 @@ nav {
 }
 
 .localisation-bar {
-    border-left: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
     width: 195px;
@@ -239,6 +239,12 @@ nav {
     border : none;
     width: 90%;
     height: 90%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    
 }
 
 .search-button {
@@ -247,7 +253,7 @@ nav {
     font-weight: bold;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    padding: 0 1.5rem;
+    padding: 15px 16px 15px 16px;
     font-size: 18px;
     cursor: pointer;
 }
