@@ -398,8 +398,12 @@ h4 {
     gap: 30px;
     background-color: #F2F2F2;
     margin-top: 35px;
-    padding: 15px;
+    padding: 20px 20px;
 }       
+
+.footer-title {
+    margin: 0;
+}
 
 ul {
     list-style: none;
@@ -423,6 +427,10 @@ li {
         flex-direction: column;
     }
 
+    /*suppression du margin existant*/
+    .hebergements-and-populaires section {
+        margin-bottom: 0px;
+    }
     .hebergements {
         width: 100%;
     }
@@ -449,14 +457,62 @@ li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
+    /**Nouvelle hauteur des cards activites**/
+    .activites-cards .card {
+        height: 270px;
+    }
+
+    /**Règlage de la hauteur des images de la section "activites-container"**/
+    .activites-cards img {
+        height: 200px;
+    }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+    #logo {
+        margin: 30px; /* Centrer horizontalement */
+        display: block; /* Ajustement pour centrer verticalement */
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center;
+         
+    }
+
+    .nav-bar {
+        margin-top: 15px; /* Ajouter un espacement entre le logo et la nav-bar */
+        margin: 0px
+    }
+    
+    .nav-bar a {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        align-items: center;
+    }
+   
+
+
+    .nav-bar a {
+        display: block;
+        padding: 14px 0;
+        margin-left: 68px;
+        border-top: 2px solid transparent;
+      }
+      
+      /** Ajout d'une couleur lors du survole des l'éléments Hébergement et Activités **/
+      .nav-bar a:hover {
+          color: #0065FC ;
+          border-top: 2px solid #0065FC;
+      }
 
 }
 
 
 
-
+}
