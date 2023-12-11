@@ -154,6 +154,7 @@ nav {
   display: block;
   padding: 14px 0;
   margin-left: 68px;
+  border-top: 2px solid transparent;
 }
 
 /** Ajout d'une couleur lors du survole des l'éléments Hébergement et Activités **/
@@ -559,7 +560,7 @@ li {
   }
 
   .search-word {
-    visibility: hidden;
+    display: none;
   }
 
   .search-button {
