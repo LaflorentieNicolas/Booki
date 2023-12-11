@@ -232,7 +232,7 @@ nav {
 
 /* Intégration de la loupe en hidden, visible lorsque nous passons en version mobile */
 .fa-magnifying-glass {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -313,8 +313,10 @@ h3 {
 
 /*----- Hébergements -----*/
 
-h2 {
+.hebergements-title h2 {
   margin: 0;
+  padding-bottom: 30px;
+  font-size: 22px;
 }
 
 .hebergements-cards {
@@ -361,6 +363,11 @@ h2 {
 }
 
 /*----- Activités à Marseilles -----*/
+
+.activites-title {
+  margin: 0;
+  font-size: 22px;
+}
 
 .activites-container {
   display: grid;
@@ -489,6 +496,10 @@ li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  body {
+    margin: 0;
+  }
+
   .main-container {
     box-sizing: none;
     padding: 0px;
@@ -544,7 +555,7 @@ li {
   }
 
   .fa-magnifying-glass {
-    display: inline;
+    visibility: visible;
   }
 
   .search-word {
@@ -614,6 +625,7 @@ li {
   }
 
   .hebergements-title h2 {
+    padding: 0;
     margin-bottom: 15px;
   }
 
